@@ -8,7 +8,7 @@ public interface URLConstants {
 
     // http://localhost:5001/firstprogramassign-4261/us-central1/app
     // https://us-central1-firstprogramassign-4261.cloudfunctions.net/app/points
-    String REQUEST_URL = "http://10.0.2.2:5001/firstprogramassign-4261/us-central1/app/points";
+    String REQUEST_URL = "https://us-central1-firstprogramassign-4261.cloudfunctions.net/app/points";
 
     int GET_REQUEST_CODE = 1;
     int POST_REQUEST_CODE = 2;
