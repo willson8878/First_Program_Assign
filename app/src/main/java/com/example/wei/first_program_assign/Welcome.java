@@ -52,6 +52,10 @@ public class Welcome extends AppCompatActivity implements NetworkController.Resu
 
     @Override
     public void onResult(int requestCode, boolean isSuccess, JSONObject jsonObject, VolleyError volleyError) {
-        responseBox.setText(jsonObject.toString());
+        if (jsonObject != null) {
+            responseBox.setText(jsonObject.toString());
+        } else {
+            responseBox.setText("Received a null object for some reason.");
+        }
     }
 }
