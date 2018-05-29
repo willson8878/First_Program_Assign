@@ -7,7 +7,6 @@
     tools:context=".Welcome">
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,6 +37,21 @@
             android:layout_weight="1"
             android:onClick="submitPoint"
             android:text="Submit to Server" />
+
+        <EditText
+            android:id="@+id/responseBox"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refresh Data"
+            android:onClick="refreshData"/>
 
     </LinearLayout>
 </LinearLayout>
